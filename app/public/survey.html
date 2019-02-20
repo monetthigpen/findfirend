@@ -6,11 +6,15 @@
   <title>Survey Page</title>
 
   <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
+  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -26,7 +30,7 @@
       <div class="text-center">
         <a href="/">
           <button class="btn btn-lg btn-default">
-            <span class="fa fa-home"></span>
+            <span class="fa fa-home">home</span>
           </button>
         </a>
       </div>
@@ -41,22 +45,152 @@
           <div class="card-body">
             <form role="form">
               <div class="form-group">
-                <label for="reserve-name">Name</label>
-                <input type="text" class="form-control" id="reserve-name">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
               </div>
               <div class="form-group">
-                <label for="reserve-phone">Phone Number</label>
-                <input type="text" class="form-control" id="reserve-phone">
+                <label for="Photo">Link to Photo:</label>
+                <input type="text" class="form-control" id="Photo">
               </div>
               <div class="form-group">
-                <label for="reserve-email">Email</label>
-                <input type="text" class="form-control" id="reserve-email">
+                <label for="questionOne"><h4>Your mind is always buzzing with unexplored ideas and plans.</h4></label>
+                <div>
+                  <select  id="select" class="form-control min-select" name="min_select[]">
+                      <option class="choice" >Select Option</option> 
+                      <option class="choice" value="1">1</option> 
+                      <option class="choice" value="2">2</option> 
+                      <option class="choice" value="3">3</option> 
+                      <option class="choice" value="4">4</option> 
+                      <option class="choice" value="5">5</option> 
+                  </select>
+                  
               </div>
               <div class="form-group">
-                <label for="reserve-unique-id">Unique ID</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
-              </div>
-              <button type="submit" class="btn btn-primary submit">Submit</button>
+                  <label for="questionOne"><h4>Generally speaking, you rely more on your experience than your imagination.</h4></label>
+                  <div>
+                      <select id="select2" class="form-control min-select" name="min_select[]">
+                          <option class="choice" >Select Option</option>
+                          <option class="choice" value="1">1</option> 
+                          <option class="choice" value="2">2</option> 
+                          <option class="choice" value="3">3</option> 
+                          <option class="choice" value="4">4</option> 
+                          <option class="choice" value="5">5</option> 
+                      </select>
+                      
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label for="questionOne"><h4>You rarely do something just out of sheer curiosity.</h4></label>
+                    <div>
+                        <select id="select3" class="form-control min-select" name="min_select[]">
+                            <option class="choice" >Select Option</option>
+                            <option class="choice" value="1">1</option> 
+                            <option class="choice" value="2">2</option> 
+                            <option class="choice" value="3">3</option> 
+                            <option class="choice" value="4">4</option> 
+                            <option class="choice" value="5">5</option>  
+                        </select>
+                        
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="questionOne"><h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4></label>
+                      <div>
+                          <select id="select4" class="form-control min-select" name="min_select[]">
+                              <option class="choice" >Select Option</option>
+                              <option class="choice" value="1">1</option> 
+                              <option class="choice" value="2">2</option> 
+                              <option class="choice" value="3">3</option> 
+                              <option class="choice" value="4">4</option> 
+                              <option class="choice" value="5">5</option> 
+                          </select>
+                          
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="questionOne"><h4>People can rarely upset you.</h4></label>
+                        <div>
+                            <select id="select5" class="form-control min-select" name="min_select[]">
+                                <option class="choice" >Select Option</option> 
+                                <option class="choice" value="1">1</option> 
+                                <option class="choice" value="2">2</option> 
+                                <option class="choice" value="3">3</option> 
+                                <option class="choice" value="4">4</option> 
+                                <option class="choice" value="5">5</option>  
+                            </select>
+                            
+                        </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="questionOne"><h4>It is often difficult for you to relate to other people’s feelings.</h4></label>
+                          <div>
+                              <select id="select6" class="form-control min-select" name="min_select[]">
+                                  <option class="choice" >Select Option</option> 
+                                  <option class="choice" value="1">1</option> 
+                                  <option class="choice" value="2">2</option> 
+                                  <option class="choice" value="3">3</option> 
+                                  <option class="choice" value="4">4</option> 
+                                  <option class="choice" value="5">5</option> 
+                              </select>
+                              
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="questionOne"><h4>In a discussion, truth should be more important than people’s sensitivities.</h4></label>
+                            <div>
+                                <select id="select7" class="form-control min-select" name="min_select[]">
+                                    <option class="choice" >Select Option</option> 
+                                    <option class="choice" value="1">1</option> 
+                                    <option class="choice" value="2">2</option> 
+                                    <option class="choice" value="3">3</option> 
+                                    <option class="choice" value="4">4</option> 
+                                    <option class="choice" value="5">5</option> 
+                                </select>
+                                
+                            </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="questionOne"><h4>You rarely get carried away by fantasies and ideas.</h4></label>
+                              <div>
+                                  <select id="select8" class="form-control min-select" name="min_select[]">
+                                      <option class="choice" value="empty">Select Option</option>
+                                      <option class="choice" value="1">1</option> 
+                                      <option class="choice" value="2">2</option> 
+                                      <option class="choice" value="3">3</option> 
+                                      <option class="choice" value="4">4</option> 
+                                      <option class="choice" value="5">5</option>   
+                                  </select>
+                                  
+                              </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="questionOne"><h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not</h4></label>
+                                <div>
+                                    <select id="select9" class="form-control min-select" name="min_select[]">
+                                        <option class="choice" >Select Option</option> 
+                                        <option class="choice" value="1">1</option> 
+                                        <option class="choice" value="2">2</option> 
+                                        <option class="choice" value="3">3</option> 
+                                        <option class="choice" value="4">4</option> 
+                                        <option class="choice" value="5">5</option> 
+                                    </select>
+                                    
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="questionOne"><h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4></label>
+                                  <div>
+                                      <select id="select10" class="form-control min-select" name="min_select[]">
+                                          <option class="choice" >Select Option</option> 
+                                          <option class="choice" value="1">1</option> 
+                                          <option class="choice" value="2">2</option> 
+                                          <option class="choice" value="3">3</option> 
+                                          <option class="choice" value="4">4</option> 
+                                          <option class="choice" value="5">5</option> 
+                                      </select>
+                                  </div>
+                                </div>
+               <button type="submit" class="btn btn-primary submit">Submit</button>
             </form>
           </div>
         </div>
@@ -75,35 +209,47 @@
   </div>
 
 </body>
-
-</html>
-
-<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
-<script type="text/javascript">
-  // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
-  // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
-  // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
-  // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
-
+<script>
+  
+  // var values = [];
+  
+  // $("option.choice").on("click", function(i, sel){
+  //   var selectedVal = $(sel).val();
+  //   values.push(selectedVal);
+  // });
+  
   $(".submit").on("click", function(event) {
     event.preventDefault();
-
+      
     // Here we grab the form elements
     var newFriend = {
-      name: $("#reserve-name").val().trim(),
-      photo: $("#reserve-phone").val().trim(),
-      scores: $("#reserve-email").val().trim(),
-      customerID: $("#reserve-unique-id").val().trim()
-    };
+      name: $("#name").val().trim(),
+      photo: $("#Photo").val().trim(),
+      scores: [
+        $("#select").val(),
+        $("#select2").val(),
+        $("#select3").val(),
+        $("#select4").val(),
+        $("#select5").val(),
+        $("#select6").val(),
+        $("#select7").val(),
+        $("#select8").val(),
+        $("#select9").val(),
+        $("#select10").val()
 
+      ]
+      
+    }
+    
     console.log(newFriend);
+
 
     // This line is the magic. It"s very similar to the standard ajax function we used.
     // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
     // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
     // depending on if a tables is available or not.
 
-    $.post("/api/tables", newFriend,
+    $.post("/api/friends", newFriend,
       function(data) {
 
         // If a table is available... tell user they are booked.
@@ -117,13 +263,16 @@
         }
 
         // Clear the form when submitting
-        $("#reserve-name").val("");
-        $("#reserve-phone").val("");
-        $("#reserve-email").val("");
-        $("#reserve-unique-id").val("");
+        $("#name").val("");
+        $("#Photo").val("");
+        $("#number").val();
+        
 
       });
 
   });
-
+  
+  
 </script>
+
+</html>
