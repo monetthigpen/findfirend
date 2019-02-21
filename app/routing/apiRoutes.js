@@ -29,9 +29,7 @@ module.exports = function(app) {
           }
         
         if (calc < diff) {
-          console.log('Closest match found = ' + calc);
-          console.log('Friend name = ' + friendsData[i].name);
-          console.log('Friend image = ' + friendsData[i].photo);
+
   
           diff = calc;
           friendName = friendsData[i].name;
@@ -39,8 +37,8 @@ module.exports = function(app) {
         }
       }
         friendsData.push(req.body);
-        res.json(true);
-        res.json({status: true, friendName: friendName, friendPhoto: friendPhoto});
+        //res.json(true);
+        res.json({ friendName: friendName, friendPhoto: friendPhoto});
       
     });
   
